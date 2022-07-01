@@ -1,0 +1,19 @@
+{
+    "extends": [
+        "config:base",
+        ":preserveSemverRanges",
+        ":prImmediately",
+        ":rebaseStalePrs",
+        ":automergeAll",
+        ":skipStatusChecks",
+        ":gitSignOff",
+        "github>whitesource/merge-confidence:beta"
+    ],
+    "addLabels": [
+        "dependencies"
+    ],
+    "reviewersFromCodeOwners": true,
+    "assigneesFromCodeOwners": true,
+    "semanticCommits": "enabled",
+    "assignAutomerge": true
+}
